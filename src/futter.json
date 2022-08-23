@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "name": "Banane",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 1.0,
+    "fett": 0.2,
+    "kohlenhydrate": 22,
+    "davon zucker": 17.2,
+    "protein": 1.1,
+    "ballaststoffe": 2
+  },
+  {
+    "id": 2,
+    "name": "Wiener Würstchen",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 263.7,
+    "fett": 23.2,
+    "kohlenhydrate": 0.2,
+    "davon zucker": 0,
+    "protein": 13.5,
+    "ballaststoffe": 0.1
+  },
+  {
+    "id": 3,
+    "name": "Knuspermüsli",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 408.5,
+    "fett": 16.7,
+    "kohlenhydrate": 51.9,
+    "davon zucker": 29,
+    "protein": 10.6,
+    "ballaststoffe": 5
+  },
+  {
+    "id": 4,
+    "name": "Toastbrot",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 261.6,
+    "fett": 3.3,
+    "kohlenhydrate": 47.7,
+    "davon zucker": 6,
+    "protein": 8.8,
+    "ballaststoffe": 4.7
+  },
+  {
+    "id": 5,
+    "name": "Konfitüre(Marmelade)",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 250.4,
+    "fett": 1.9,
+    "kohlenhydrate": 52.3,
+    "davon zucker": 49,
+    "protein": 5,
+    "ballaststoffe": 0.7
+  },
+  {
+    "id": 6,
+    "name": "Eier",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 193,
+    "fett": 7.2,
+    "kohlenhydrate": 23.8,
+    "davon zucker": 1.1,
+    "protein": 7.8,
+    "ballaststoffe": 0
+  },
+  {
+    "id": 7,
+    "name": "Butterkäse",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 221.4,
+    "fett": 11.6,
+    "kohlenhydrate": 17.4,
+    "davon zucker": 0.1,
+    "protein": 11.5,
+    "ballaststoffe": 0
+  },
+  {
+    "id": 8,
+    "name": "Brötchen (Weizen)",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 232.7,
+    "fett": 8.3,
+    "kohlenhydrate": 28.1,
+    "davon zucker": 6,
+    "protein": 10.8,
+    "ballaststoffe": 2
+  },
+  {
+    "id": 9,
+    "name": "Joghurt (mager)",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 38.1,
+    "fett": 0.1,
+    "kohlenhydrate": 5.5,
+    "davon zucker": 3.2,
+    "protein": 3.8,
+    "ballaststoffe": 0
+  },
+  {
+    "id": 10,
+    "name": "Nutella",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 83.8,
+    "fett": 2.9,
+    "kohlenhydrate": 10.2,
+    "davon zucker": 54,
+    "protein": 4,
+    "ballaststoffe": 5
+  },
+  {
+    "id": 11,
+    "name": "Butter",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 121.5,
+    "fett": 7.4,
+    "kohlenhydrate": 9.7,
+    "davon zucker": 0.1,
+    "protein": 3.8,
+    "ballaststoffe": 0
+  },
+  {
+    "id": 12,
+    "name": "Öl",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 125.5,
+    "fett": 7.9,
+    "kohlenhydrate": 9.6,
+    "davon zucker": 0,
+    "protein": 3.8,
+    "ballaststoffe": 0
+  },
+  {
+    "id": 13,
+    "name": "Nudeln",
+    "menge (in g)": 100,
+    "Brennwert(kcal)": 126.4,
+    "fett": 7.9,
+    "kohlenhydrate": 9.9,
+    "davon zucker": 0.4,
+    "protein": 3.8,
+    "ballaststoffe": 1.2
+  }
+]

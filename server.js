@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import ingridientroutes from "./routes/ingredientroutes.js";
 
 const server = express();
 const port = 8080;
@@ -10,10 +11,16 @@ server.use(cors());
 
 server.use(express.json());
 
+// use Router for /pokemon
+// server.use("/pokemon", pokemonRoutes);
+
+// use Router for /game
+server.use("/ingridients", ingridientroutes);
+
 server.all("*", (req, res) => {
   res.send("Die URL ist ungültig");
 });
 
-server.listen(port, host, () => {
-  console.log(`Server is running on http://${host}:${port}`);
+server.listen(process.env.PORT ?? port, () => {
+  console.log(`Server läuft auf ${port}`);
 });
