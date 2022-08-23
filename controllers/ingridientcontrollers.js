@@ -32,9 +32,9 @@ const food_name = (req, res) => {
   );
 };
 
-const food_id_info = (req, res) => {
-  const food = foodbyId(req);
+const food_name_info = (req, res) => {
+  const food = foodbyName(req);
   res.send(food[req.params.info] ?? "use base, name or type");
 };
 
-export { food_all, food_id, food_id_info, food_name };
+export { food_all, food_id, food_name_info, food_name };
