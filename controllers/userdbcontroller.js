@@ -1,6 +1,7 @@
 import "dotenv/config";
 import mongoose from "mongoose";
-import Customdbentry from "./models/cumstomdbentry.js";
+import customdb from "./models/cumstomdbentry.js";
+// import customdb from "./models/cumstomdbentry.js";
 
 mongoose.connect(process.env.MONGO_URL, {
   user: process.env.MONGO_USER,
@@ -18,16 +19,16 @@ mongoose.connection.on("error", (err) => {
 const create_new_ingridient = async (req, res) => {
   try {
     if (
-      (name &&
-        menge_in_g &&
-        Brennwert_kcal &&
-        fett &&
-        kohlenhydrate &&
-        davon_zucker &&
-        protein &&
-        ballaststoffe) !== (undefined || 0)
+      (req.body.name &&
+        req.body.menge_in_g &&
+        req.body.Brennwert_kcal &&
+        req.body.fett &&
+        req.body.kohlenhydrate &&
+        req.body.davon_zucker &&
+        req.body.protein &&
+        req.body.ballaststoffe) !== (undefined || 0)
     ) {
-      await Customdbentry.create({
+      await customdb.create({
         name: req.body.name,
         menge_in_g: req.body.menge_in_g,
         Brennwert_kcal: req.body.Brennwert_kcal,

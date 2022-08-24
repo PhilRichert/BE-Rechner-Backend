@@ -11,4 +11,6 @@ const customdbEntrySchema = new mongoose.Schema({
   ballaststoffe: Number,
 });
 
-export default mongoose.model("Customdbentry", customdbEntrySchema);
+const customdb = mongoose.model("Customdbentry", customdbEntrySchema);
+
+export default customdb;
