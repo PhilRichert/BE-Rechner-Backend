@@ -1,5 +1,8 @@
 import express from "express";
-import { create_new_menu, delete_menu } from "../controllers/custommenu.js";
+import {
+  create_new_menu,
+  delete_menu,
+} from "../controllers/dbmenucontroller.js";
 
 const router = express.Router();
 
