@@ -45,4 +45,17 @@ const create_new_ingridient = async (req, res) => {
   }
 };
 
-export { create_new_ingridient };
+const delete_ingridient = async (req, res) => {
+  try {
+    const ingridient = await customdb.findById(req.params.id);
+    await ingridient.remove();
+    res.send({ data: true });
+  } catch {
+    res.status(404).send({ error: "Ingredient is not found" });
+  }
+
+  // const {id} = req.params
+  // const deleted = customdb.find()
+};
+
+export { create_new_ingridient, delete_ingridient };
