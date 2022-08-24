@@ -16,16 +16,6 @@ mongoose.connection.on("error", (err) => {
 });
 
 const create_new_ingridient = async (req, res) => {
-  const {
-    name,
-    menge_in_g,
-    Brennwert_kcal,
-    fett,
-    kohlenhydrate,
-    davon_zucker,
-    protein,
-    ballaststoffe,
-  } = req.body;
   try {
     if (
       (name &&
@@ -38,14 +28,14 @@ const create_new_ingridient = async (req, res) => {
         ballaststoffe) !== (undefined || 0)
     ) {
       await Customdbentry.create({
-        name: name,
-        menge_in_g: menge_in_g,
-        Brennwert_kcal: Brennwert_kcal,
-        fett: fett,
-        kohlenhydrate: kohlenhydrate,
-        davon_zucker: davon_zucker,
-        protein: protein,
-        ballaststoffe: ballaststoffe,
+        name: req.body.name,
+        menge_in_g: req.body.menge_in_g,
+        Brennwert_kcal: req.body.Brennwert_kcal,
+        fett: req.body.fett,
+        kohlenhydrate: req.body.kohlenhydrate,
+        davon_zucker: req.body.davon_zucker,
+        protein: req.body.protein,
+        ballaststoffe: req.body.ballaststoffe,
       });
       res.send("New User created");
     }

@@ -12,9 +12,6 @@ server.use(cors());
 
 server.use(express.json());
 
-// use Router for /pokemon
-// server.use("/pokemon", pokemonRoutes);
-
 // use Router for /game
 server.use("/ingridients", ingridientroutes);
 server.use("/newingridient", dbentryroutes);
