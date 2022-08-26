@@ -2,8 +2,10 @@
   {
     "id": 1,
     "name": "Banane",
+
     "menge": 100,
     "Brennwert": 1.0,
+
     "fett": 0.2,
     "kohlenhydrate": 22,
     "davon zucker": 17.2,
@@ -13,8 +15,10 @@
   {
     "id": 2,
     "name": "Wiener Würstchen",
+
     "menge": 100,
     "Brennwert": 263.7,
+
     "fett": 23.2,
     "kohlenhydrate": 0.2,
     "davon zucker": 0,
@@ -24,8 +28,10 @@
   {
     "id": 3,
     "name": "Knuspermüsli",
+
     "menge": 100,
     "Brennwert": 408.5,
+
     "fett": 16.7,
     "kohlenhydrate": 51.9,
     "davon zucker": 29,
@@ -35,8 +41,10 @@
   {
     "id": 4,
     "name": "Toastbrot",
+
     "menge": 100,
     "Brennwert": 261.6,
+
     "fett": 3.3,
     "kohlenhydrate": 47.7,
     "davon zucker": 6,
@@ -46,8 +54,10 @@
   {
     "id": 5,
     "name": "Konfitüre(Marmelade)",
+
     "menge": 100,
     "Brennwert": 250.4,
+
     "fett": 1.9,
     "kohlenhydrate": 52.3,
     "davon zucker": 49,
@@ -57,8 +67,10 @@
   {
     "id": 6,
     "name": "Eier",
+
     "menge": 100,
     "Brennwert": 193,
+
     "fett": 7.2,
     "kohlenhydrate": 23.8,
     "davon zucker": 1.1,
@@ -68,8 +80,10 @@
   {
     "id": 7,
     "name": "Butterkäse",
+
     "menge": 100,
     "Brennwert": 221.4,
+
     "fett": 11.6,
     "kohlenhydrate": 17.4,
     "davon zucker": 0.1,
@@ -79,8 +93,10 @@
   {
     "id": 8,
     "name": "Brötchen (Weizen)",
+
     "menge": 100,
     "Brennwert": 232.7,
+
     "fett": 8.3,
     "kohlenhydrate": 28.1,
     "davon zucker": 6,
@@ -90,8 +106,10 @@
   {
     "id": 9,
     "name": "Joghurt (mager)",
+
     "menge": 100,
     "Brennwert": 38.1,
+
     "fett": 0.1,
     "kohlenhydrate": 5.5,
     "davon zucker": 3.2,
@@ -101,8 +119,10 @@
   {
     "id": 10,
     "name": "Nutella",
+
     "menge": 100,
     "Brennwert": 83.8,
+
     "fett": 2.9,
     "kohlenhydrate": 10.2,
     "davon zucker": 54,
@@ -112,8 +132,10 @@
   {
     "id": 11,
     "name": "Butter",
+
     "menge": 100,
     "Brennwert": 121.5,
+
     "fett": 7.4,
     "kohlenhydrate": 9.7,
     "davon zucker": 0.1,
@@ -123,8 +145,10 @@
   {
     "id": 12,
     "name": "Öl",
+
     "menge": 100,
     "Brennwert": 125.5,
+
     "fett": 7.9,
     "kohlenhydrate": 9.6,
     "davon zucker": 0,
@@ -134,8 +158,10 @@
   {
     "id": 13,
     "name": "Nudeln",
+
     "menge": 100,
     "Brennwert": 126.4,
+
     "fett": 7.9,
     "kohlenhydrate": 9.9,
     "davon zucker": 0.4,

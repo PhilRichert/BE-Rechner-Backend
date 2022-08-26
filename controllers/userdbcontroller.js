@@ -21,7 +21,7 @@ const create_new_ingridient = async (req, res) => {
     if (
       (req.body.name &&
         req.body.menge_in_g &&
-        req.body.Brennwert_kcal &&
+        req.body.brennwert_kcal &&
         req.body.fett &&
         req.body.kohlenhydrate &&
         req.body.davon_zucker &&
@@ -31,7 +31,7 @@ const create_new_ingridient = async (req, res) => {
       await customdb.create({
         name: req.body.name,
         menge_in_g: req.body.menge_in_g,
-        Brennwert_kcal: req.body.Brennwert_kcal,
+        brennwert_kcal: req.body.brennwert_kcal,
         fett: req.body.fett,
         kohlenhydrate: req.body.kohlenhydrate,
         davon_zucker: req.body.davon_zucker,
