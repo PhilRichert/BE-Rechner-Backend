@@ -28,7 +28,7 @@
     "brennwert": 408.5,
     "fett": 16.7,
     "kohlenhydrate": 51.9,
-    "davon zucker": 29,
+    "davonzucker": 29,
     "protein": 10.6,
     "ballaststoffe": 5
   },
@@ -39,7 +39,7 @@
     "brennwert": 261.6,
     "fett": 3.3,
     "kohlenhydrate": 47.7,
-    "davon zucker": 6,
+    "davonzucker": 6,
     "protein": 8.8,
     "ballaststoffe": 4.7
   },
@@ -50,7 +50,7 @@
     "brennwert": 250.4,
     "fett": 1.9,
     "kohlenhydrate": 52.3,
-    "davon zucker": 49,
+    "davonzucker": 49,
     "protein": 5,
     "ballaststoffe": 0.7
   },
@@ -61,7 +61,7 @@
     "brennwert": 193,
     "fett": 7.2,
     "kohlenhydrate": 23.8,
-    "davon zucker": 1.1,
+    "davonzucker": 1.1,
     "protein": 7.8,
     "ballaststoffe": 0
   },
@@ -72,7 +72,7 @@
     "brennwert": 221.4,
     "fett": 11.6,
     "kohlenhydrate": 17.4,
-    "davon zucker": 0.1,
+    "davonzucker": 0.1,
     "protein": 11.5,
     "ballaststoffe": 0
   },
@@ -83,7 +83,7 @@
     "brennwert": 232.7,
     "fett": 8.3,
     "kohlenhydrate": 28.1,
-    "davon zucker": 6,
+    "davonzucker": 6,
     "protein": 10.8,
     "ballaststoffe": 2
   },
@@ -94,7 +94,7 @@
     "brennwert": 38.1,
     "fett": 0.1,
     "kohlenhydrate": 5.5,
-    "davon zucker": 3.2,
+    "davonzucker": 3.2,
     "protein": 3.8,
     "ballaststoffe": 0
   },
@@ -105,7 +105,7 @@
     "brennwert": 83.8,
     "fett": 2.9,
     "kohlenhydrate": 10.2,
-    "davon zucker": 54,
+    "davonzucker": 54,
     "protein": 4,
     "ballaststoffe": 5
   },
@@ -116,7 +116,7 @@
     "brennwert": 121.5,
     "fett": 7.4,
     "kohlenhydrate": 9.7,
-    "davon zucker": 0.1,
+    "davonzucker": 0.1,
     "protein": 3.8,
     "ballaststoffe": 0
   },
@@ -127,7 +127,7 @@
     "brennwert": 125.5,
     "fett": 7.9,
     "kohlenhydrate": 9.6,
-    "davon zucker": 0,
+    "davonzucker": 0,
     "protein": 3.8,
     "ballaststoffe": 0
   },
