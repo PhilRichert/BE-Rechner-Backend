@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const diaryEntrySchema = new mongoose.Schema({
   zutat: [{ type: Schema.Types.ObjectId, ref: "Customdbentry" }],
 
-  mahlzeit: varChar(255),
+  mahlzeit: String,
   time: Date,
 });
 
