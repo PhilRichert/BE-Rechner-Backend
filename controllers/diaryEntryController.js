@@ -1,5 +1,5 @@
 import "dotenv/config";
-import diaryEntry from "./models/diaryEntry.js";
+import diaryEntry from "./models/diaryentry.js";
 
 const create_new_entry = async (req, res) => {
   try {
