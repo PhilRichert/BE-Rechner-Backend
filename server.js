@@ -4,17 +4,17 @@ import cors from "cors";
 import ingridientroutes from "./routes/ingredientroutes.js";
 import dbentryroutes from "./routes/dbentryroutes.js";
 import dbmenuroutes from "./routes/dbmenuroutes.js";
+import diaryEntryroutes from "./routes/diaryEntryroutes.js";
 import bodyparser from "body-parser";
 
 const server = express();
 const port = 8080;
 
-//use cors
 server.use(cors());
 server.use(bodyparser.urlencoded({ extended: false }));
 server.use(express.json());
 
-// use Router for /game
+server.use("/entrys", diaryEntryroutes);
 server.use("/ingridients", ingridientroutes);
 server.use("/newingridient", dbentryroutes);
 server.use("/newmenu", dbmenuroutes);
