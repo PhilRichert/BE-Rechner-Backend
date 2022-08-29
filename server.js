@@ -9,11 +9,6 @@ import bodyparser from "body-parser";
 
 const server = express();
 const port = 3000;
-server.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});
 
 server.use(cors());
 server.use(bodyparser.urlencoded({ extended: false }));
