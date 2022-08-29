@@ -9,8 +9,14 @@ import bodyparser from "body-parser";
 
 const server = express();
 const port = 3000;
-
-server.use(cors());
+const corsOptions = {
+  origin: "http://localhost:" + (process.env.PORT || 3000),
+  //          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //          whatever origin (protocol://full.domain.name:port) calling the server
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+server.use(cors(corsOptions));
 server.use(bodyparser.urlencoded({ extended: false }));
 server.use(express.json());
 
