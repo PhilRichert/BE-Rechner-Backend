@@ -10,7 +10,7 @@ import bodyparser from "body-parser";
 const server = express();
 const port = 3000;
 const corsOptions = {
-  origin: "http://localhost:" + (process.env.PORT || 3000),
+  origin: "http://localhost:" + (process.env.PORT || 8080),
   //          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   //          whatever origin (protocol://full.domain.name:port) calling the server
   credentials: true, //access-control-allow-credentials:true
