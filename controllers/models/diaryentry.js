@@ -2,8 +2,14 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const diaryEntrySchema = new mongoose.Schema({
-  zutat: [{ type: Schema.Types.ObjectId, ref: "Customdbentry" }],
-
+  name: String,
+  menge: Number,
+  brennwert: Number,
+  fett: Number,
+  kohlenhydrate: Number,
+  davonzucker: Number,
+  protein: Number,
+  ballaststoffe: Number,
   mahlzeit: String,
   time: Date,
 });

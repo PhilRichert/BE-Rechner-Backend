@@ -5,7 +5,13 @@ const create_new_entry = async (req, res) => {
   try {
     if (
       (req.body.name &&
-        req.body.zutat &&
+        req.body.menge &&
+        req.body.brennwert &&
+        req.body.fett &&
+        req.body.kohlenhydrate &&
+        req.body.davonzucker &&
+        req.body.protein &&
+        req.body.ballaststoffe &&
         req.body.mahlzeit &&
         req.body.time) !== (undefined || 0)
     ) {
