@@ -13,13 +13,18 @@ const create_new_entry = async (req, res) => {
         req.body.protein &&
         req.body.ballaststoffe &&
         req.body.mahlzeit &&
-        req.body.time) !== (undefined || 0)
+       ) !== (undefined || 0)
     ) {
       await diaryEntry.create({
         name: req.body.name,
-        zutat: req.body.zutat,
+        menge: req.body.zutat,
+        brennwert: req.body.brennwert,
+        fett: req.body.fett,
+        kohlenhydrate: req.body.kohlenhydrate,
+        davonzucker: req.body.davonzucker,
+        protein: req.body.protein,
+        ballaststoffe: req.body.ballaststoffe,
         mahlzeit: req.body.mahlzeit,
-        time: req.body.time,
       });
       res.send("New Entry created");
     }
