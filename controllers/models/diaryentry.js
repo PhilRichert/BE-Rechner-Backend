@@ -11,7 +11,6 @@ const diaryEntrySchema = new mongoose.Schema({
   protein: Number,
   ballaststoffe: Number,
   mahlzeit: String,
-  time: Date,
 });
 
 const diaryEntry = mongoose.model("diaryEntry", diaryEntrySchema);

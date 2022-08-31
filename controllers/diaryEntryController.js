@@ -4,7 +4,7 @@ import diaryEntry from "./models/diaryentry.js";
 const create_new_entry = async (req, res) => {
   try {
     if (
-      (req.body.name &&
+      (req.config.headers.name &&
         req.body.menge &&
         req.body.brennwert &&
         req.body.fett &&
@@ -15,7 +15,7 @@ const create_new_entry = async (req, res) => {
         req.body.mahlzeit) !== (undefined || 0)
     ) {
       await diaryEntry.create({
-        name: req.body.name,
+        name: req.config.headers.name,
         menge: req.body.zutat,
         brennwert: req.body.brennwert,
         fett: req.body.fett,
