@@ -16,7 +16,7 @@ const create_new_entry = async (req, res) => {
     ) {
       await diaryEntry.create({
         name: req.body.name,
-        menge: req.body.zutat,
+        menge: req.body.menge,
         brennwert: req.body.brennwert,
         fett: req.body.fett,
         kohlenhydrate: req.body.kohlenhydrate,
