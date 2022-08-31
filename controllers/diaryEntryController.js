@@ -4,7 +4,7 @@ import diaryEntry from "./models/diaryentry.js";
 const create_new_entry = async (req, res) => {
   try {
     if (
-      (req.config.headers.name &&
+      (req.body.name &&
         req.body.menge &&
         req.body.brennwert &&
         req.body.fett &&
