@@ -43,11 +43,20 @@ const delete_entry = async (req, res) => {
   }
 };
 
-const get_entry = async (req, res) => {
+const get_one_entry = async (req, res) => {
   const Menu = await diaryEntry
     .findById(req.params.id)
     .populate({ path: "zutat", model: "diaryEntry" });
   res.json(Menu);
 };
 
-export { create_new_entry, delete_entry, get_entry };
+const get_all_entrys = async (req, res) => {
+  try {
+    const all_entry = await diaryEntry.find({});
+    res.send(all_entry);
+  } catch (error) {
+    res.send(error);
+  }
+};
+
+export { create_new_entry, delete_entry, get_one_entry, get_all_entrys };
