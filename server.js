@@ -8,7 +8,7 @@ import diaryEntryroutes from "./routes/diaryEntryroutes.js";
 import bodyparser from "body-parser";
 
 const server = express();
-const port = 3000;
+const port = 8000;
 
 server.use(cors());
 server.use(bodyparser.urlencoded({ extended: false }));
