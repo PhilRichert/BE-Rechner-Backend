@@ -1,7 +1,7 @@
 import futter from "../src/futter.json" assert { type: "json" };
 import faktor_settings from "./models/settings";
 
-const getsettings = (req) => {
+const getsettings = async (req) => {
     try {
         const all_settings = await faktor_settings.find({});
         res.send(all_settings);
