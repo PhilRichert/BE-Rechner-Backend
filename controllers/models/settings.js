@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
 
-const faktor_settings_Schema = new mongoose.Schema({
+const faktor_settingsSchema = new mongoose.Schema({
   Faktor_morgens: Number,
   Faktor_mittags: Number,
   Faktor_abends: Number,
