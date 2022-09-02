@@ -1,9 +1,9 @@
 import futter from "../src/futter.json" assert { type: "json" };
-import settings from "./models/settings";
+import faktor_settings from "./models/settings";
 
 const getsettings = (req) => {
     try {
-        const all_settings = await settings.find({});
+        const all_settings = await faktor_settings.find({});
         res.send(all_settings);
       } catch (error) {
         res.send(error);
@@ -18,7 +18,7 @@ const create_new_entry = async (req, res) => {
             req.body.Faktor_abends,
             req.body.Faktor_nachts) !== (undefined)
       ) {
-        await settings.create({
+        await faktor_settings.create({
             Faktor_morgens: req.body.Faktor_morgens,
             Faktor_mittags: req.body.Faktor_mittags,
             Faktor_abends:req.body.Faktor_abends,
@@ -34,8 +34,8 @@ const create_new_entry = async (req, res) => {
 
   const delete_setting = async (req, res) => {
     try {
-      const menu = await settings.findById(req.params._id);
-            await settings.remove();
+      const menu = await faktor_settings.findById(req.params._id);
+            await faktor_settings.remove();
       res.send({ data: true });
     } catch {
       res.status(404).send({ error: "Setting is not found" });
@@ -44,9 +44,9 @@ const create_new_entry = async (req, res) => {
 
   const change_setting = async (req,res) => {
     try{
-       await settings.findByIdAndUpdate({_id:req.params.id}, req.body,{new:true})
-      await function(settings){
-        res.send(settings)
+       await faktor_settings.findByIdAndUpdate({_id:req.params.id}, req.body,{new:true})
+      await function(faktor_settings){
+        res.send(faktor_settings)
        }
     }
     catch{
