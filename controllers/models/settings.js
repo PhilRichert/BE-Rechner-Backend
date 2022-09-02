@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
 
-const settingsSchema = new mongoose.Schema({
+const faktor_settings_Schema = new mongoose.Schema({
   Faktor_morgens: Number,
   Faktor_mittags: Number,
   Faktor_abends: Number,
@@ -9,6 +9,6 @@ const settingsSchema = new mongoose.Schema({
 
 });
 
-const settings = mongoose.model("settings", settingsSchema);
+const faktor_settings = mongoose.model("faktor_settings_settings", faktor_settingsSchema);
 
-export default settings;
+export default faktor_settings;
