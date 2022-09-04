@@ -45,6 +45,10 @@ const create_new_ingridient = async (req, res) => {
   }
 };
 
+const get_custom_ingredients = async (req, res) => {
+  res.send(futter);
+};
+
 const delete_ingridient = async (req, res) => {
   try {
     const ingridient = await customdb.findById(req.params.id);
@@ -58,4 +62,4 @@ const delete_ingridient = async (req, res) => {
   // const deleted = customdb.find()
 };
 
-export { create_new_ingridient, delete_ingridient };
+export { create_new_ingridient, delete_ingridient, get_custom_ingredients };

@@ -16,8 +16,8 @@ const foodbyName = (req) => {
   }
 };
 
-const food_all = (req, res) => {
-  res.send(futter);
+const food_all = async (req, res) => {
+  await res.send(futter);
 };
 
 const food_id = (req, res) => {
