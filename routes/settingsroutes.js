@@ -15,6 +15,6 @@ router.delete("/:_id", delete_setting);
 
 router.post("/", create_new_entry);
 
-router.put("/:id", change_setting);
+router.put("/", change_setting);
 
 export default router;
