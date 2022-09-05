@@ -2,7 +2,7 @@ import "dotenv/config";
 import mongoose from "mongoose";
 import customdb from "./models/cumstomdbentry.js";
 // import customdb from "./models/cumstomdbentry.js";
-const autoIncrement = require("mongoose-auto-increment");
+// const autoIncrement = require("mongoose-auto-increment");
 
 mongoose.connect(process.env.MONGO_URL, {
   user: process.env.MONGO_USER,
@@ -17,7 +17,7 @@ mongoose.connection.on("error", (err) => {
   console.error(err);
 });
 
-autoIncrement.initialize(connection);
+// autoIncrement.initialize(connection);
 
 const create_new_ingridient = async (req, res) => {
   try {
