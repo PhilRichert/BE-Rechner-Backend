@@ -61,9 +61,13 @@ const delete_setting = async (req, res) => {
 
 const change_setting = async (req, res) => {
   try {
-    await faktor_settings.findByIdAndUpdate({ _id: req.params.id }, req.body, {
-      new: true,
-    });
+    await faktor_settings.findByIdAndUpdate(
+      { _id: "63149a223d5920f3e928987e" },
+      req.body,
+      {
+        new: true,
+      }
+    );
     await function (faktor_settings) {
       res.send(faktor_settings);
     };
