@@ -1,13 +1,10 @@
 import mongoose from "mongoose";
+import autoIncrement from "mongoose-auto-increment";
 const { Schema } = mongoose;
-// const autoIncrement = require("mongoose-auto-increment");
 
 const customdbEntrySchema = new mongoose.Schema({
-  id: {
-    type: Sequelize.INTEGER,
-    autoIncrement: true,
-    primaryKey: true,
-  },
+  id: Number,
+
   name: String,
   menge_in_g: Number,
   brennwert_kcal: Number,
@@ -17,11 +14,11 @@ const customdbEntrySchema = new mongoose.Schema({
   protein: Number,
   ballaststoffe: Number,
 });
-/*
+
 customdbEntrySchema.plugin(autoIncrement.plugin, {
   model: "Customdbentry",
   field: "id",
-});*/
+});
 const customdb = mongoose.model("Customdbentry", customdbEntrySchema);
 
 export default customdb;
