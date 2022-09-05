@@ -46,7 +46,12 @@ const create_new_ingridient = async (req, res) => {
 };
 
 const get_custom_ingredients = async (req, res) => {
-  res.send(futter);
+  try {
+    const all_entry = await customdb.find({});
+    res.send(all_entry);
+  } catch (error) {
+    res.send(error);
+  }
 };
 
 const delete_ingridient = async (req, res) => {
