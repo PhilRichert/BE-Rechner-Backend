@@ -60,20 +60,29 @@ const delete_setting = async (req, res) => {
 };
 
 const change_setting = async (req, res) => {
-  try {
-    await faktor_settings.findByIdAndUpdate(
-      { _id: "63149a223d5920f3e928987e" },
-      req.body,
-      {
-        new: true,
+  await faktor_settings.findOneAndUpdate(
+    { id: 1 },
+    {
+      Faktor_morgens: req.body.Faktor_morgens,
+      Faktor_mittags: req.body.Faktor_mittags,
+      Faktor_abends: req.body.Faktor_abends,
+      Faktor_nachts: req.body.Faktor_nachts,
+    },
+
+    {
+      new: true,
+    },
+    (err, data) => {
+      if (err) {
+      } else {
+        if (data == null) {
+          res.send("nichts gefunden");
+        } else {
+          res.send(data);
+        }
       }
-    );
-    await function (faktor_settings) {
-      res.send(faktor_settings);
-    };
-  } catch {
-    res.status(404).send({ error: "Setting is not found" });
-  }
+    }
+  );
 };
 
 export { getsettings, create_new_entry, delete_setting, change_setting };
