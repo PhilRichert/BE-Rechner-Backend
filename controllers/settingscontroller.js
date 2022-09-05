@@ -63,10 +63,12 @@ const change_setting = async (req, res) => {
   await faktor_settings.findOneAndUpdate(
     { id: 1 },
     {
-      Faktor_morgens: req.body.Faktor_morgens,
-      Faktor_mittags: req.body.Faktor_mittags,
-      Faktor_abends: req.body.Faktor_abends,
-      Faktor_nachts: req.body.Faktor_nachts,
+      $set: {
+        Faktor_morgens: req.body.Faktor_morgens,
+        Faktor_mittags: req.body.Faktor_mittags,
+        Faktor_abends: req.body.Faktor_abends,
+        Faktor_nachts: req.body.Faktor_nachts,
+      },
     },
 
     {
