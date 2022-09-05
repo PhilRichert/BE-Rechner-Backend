@@ -59,8 +59,8 @@ const delete_setting = async (req, res) => {
   }
 };
 
-const change_setting = async (req, res) => {
-  await faktor_settings.findOneAndUpdate(
+const change_setting = (req, res) => {
+  faktor_settings.findOneAndUpdate(
     { id: 1 },
     {
       $set: {
