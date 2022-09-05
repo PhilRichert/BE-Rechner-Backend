@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
-const autoIncrement = require("mongoose-auto-increment");
+// const autoIncrement = require("mongoose-auto-increment");
 
 const customdbEntrySchema = new mongoose.Schema({
   id: {
@@ -17,11 +17,11 @@ const customdbEntrySchema = new mongoose.Schema({
   protein: Number,
   ballaststoffe: Number,
 });
-
+/*
 customdbEntrySchema.plugin(autoIncrement.plugin, {
   model: "Customdbentry",
   field: "id",
-});
+});*/
 const customdb = mongoose.model("Customdbentry", customdbEntrySchema);
 
 export default customdb;
