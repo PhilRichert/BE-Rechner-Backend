@@ -26,6 +26,8 @@ const create_new_entry = async (req, res) => {
         mahlzeit: req.body.mahlzeit,
       });
       res.send("New Entry created");
+    } else {
+      res.send("Bitte eingaben überprüfen");
     }
   } catch (error) {
     console.log(error);
