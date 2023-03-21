@@ -11,7 +11,7 @@ import bodyparser from "body-parser";
 const server = express();
 const port = 8000;
 
-server.use(cors("Acces-Control-Allow-Origin"));
+server.use(cors({ origin: "*" }));
 server.use(bodyparser.urlencoded({ extended: false }));
 server.use(express.json());
 
