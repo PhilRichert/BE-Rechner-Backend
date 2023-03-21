@@ -1,4 +1,3 @@
-import futter from "../src/futter.json" assert { type: "json" };
 import faktor_settings from "./models/settings.js";
 
 const getsettings = async (req, res) => {

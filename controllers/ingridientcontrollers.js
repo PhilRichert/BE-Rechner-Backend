@@ -1,4 +1,4 @@
-import futter from "../src/futter.json" assert { type: "json" };
+import futter from "../src/futter.json";
 
 const foodbyId = (req) => {
   try {
