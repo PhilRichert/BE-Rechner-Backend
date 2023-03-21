@@ -1,4 +1,7 @@
-import futter from "../src/futter.json";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+// import futter from "../src/futter.json";
+const futter = require("../src/futter.json");
 
 const foodbyId = (req) => {
   try {
