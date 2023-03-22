@@ -2,10 +2,7 @@ import "dotenv/config";
 import mongoose from "mongoose";
 import customdb from "./models/cumstomdbentry.js";
 
-mongoose.connect(process.env.MONGO_URL, {
-  user: process.env.MONGO_USER,
-  pass: process.env.MONGO_PASS,
-});
+mongoose.connect(process.env.MONGO_URL);
 
 mongoose.connection.on("connected", () => {
   console.log("Connected to MongoDB");
