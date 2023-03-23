@@ -3,9 +3,7 @@ import mongoose from "mongoose";
 import customdb from "./models/cumstomdbentry.js";
 
 mongoose.connect(process.env.MONGO_URL);
-// mongoose.connect(
-//   "mongodb+srv://Philip:philip11@cluster0.tbvnuff.mongodb.net/test"
-// );
+
 mongoose.connection.on("connected", () => {
   console.log("Connected to MongoDB");
 });
